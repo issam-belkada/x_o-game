@@ -11,10 +11,6 @@ A simple and modern X/O (Tic Tac Toe) web game built using HTML, CSS, and JavaSc
 - Draw detection
 - Fully responsive and modern styling
 
-## 🖼️ Demo
-
-![Game Screenshot](screenshot.png) <!-- You can take a screenshot and name it screenshot.png -->
-
 ## 🚀 Getting Started
 
 ### 1. Clone or Download the Repository
