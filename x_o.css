@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma;
+    background: linear-gradient(to right, #1d1f20, #2c3e50);
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .gamecontainer {
+    background-color: #2c3e50;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cellcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .cell {
+    background-color: #34495e;
+    border-radius: 10px;
+    font-size: 60px;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .cell:hover {
+    background-color: #3d566e;
+    transform: scale(1.05);
+  }
+  
+  .cell:active {
+    transform: scale(0.95);
+  }
+  
+  #status {
+    font-size: 1.4rem;
+    margin: 10px 0 10px;
+  }
+  
+  #winner-label {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 10px rgba(255, 235, 59, 0.8);
+    animation: pop 0.6s ease forwards;
+    display: none;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #2471a3;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(0.7);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px #000;
+    animation: pop 0.5s ease;
+  }
+  
+  #modalText {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  #modalBtn {
+    padding: 10px 25px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+  
+  #modalBtn:hover {
+    background-color: #019875;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

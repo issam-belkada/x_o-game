@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="x_o.css" />
+  <title>X/O Game</title>
+</head>
+<body>
+  <div class="gamecontainer">
+    <h1>X/O Game</h1>
+    <div class="cellcontainer">
+      <div class="cell" cellindex="0"></div>
+      <div class="cell" cellindex="1"></div>
+      <div class="cell" cellindex="2"></div>
+      <div class="cell" cellindex="3"></div>
+      <div class="cell" cellindex="4"></div>
+      <div class="cell" cellindex="5"></div>
+      <div class="cell" cellindex="6"></div>
+      <div class="cell" cellindex="7"></div>
+      <div class="cell" cellindex="8"></div>
+    </div>
+    <h2 id="status">X's turn</h2>
+    <div id="winner-label" class="hidden"></div>
+    <button id="restartbtn">RESTART</button>
+  </div>
+
+  <div id="winnerModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modalText"></span>
+      <button id="modalBtn">OK</button>
+    </div>
+  </div>
+  
+  <script src="x_o.js"></script>
+</body>
+</html>
